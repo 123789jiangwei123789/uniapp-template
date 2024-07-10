@@ -1,0 +1,61 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/common/webview",
+			"style": {
+				"navigationBarTitleText": "webview"
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uniapp模版",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "white",
+		"color": "#9a9a9a",
+		"selectedColor": "#e76747",
+		"backgroundColor": "#f5f5f5",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"selectedIconPath": "/static/tabbar/index.png",
+				"iconPath": "/static/tabbar/index_active.png"
+			},
+			{
+				"pagePath": "pages/common/webview",
+				"text": "webview",
+				"selectedIconPath": "/static/tabbar/watching_active.png",
+				"iconPath": "/static/tabbar/watching.png"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"text": "我的",
+				"selectedIconPath": "/static/tabbar/my_active.png",
+				"iconPath": "/static/tabbar/my.png"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+	        "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	}
+}
